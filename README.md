@@ -51,7 +51,14 @@
 2. Добавить новую иконку с @2 и @3 разрешением (можно и более детально)
 3. в Info.plist добавить словарь
 
-```plist
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+<!-- ... -->
+
 <key>CFBundleIcons</key> <!-- если нужно для ipad то продублировать словарь с ключем CFBundleIcons~ipad --> 
 <dict>
  <key>CFBundlePrimaryIcon</key>
@@ -82,4 +89,9 @@
  <key>PrimaryIconName</key> <!-- (Ключ который присвоит красивое имя для основной иконки - поумолчанию имя Primary) -->
  <string>PRIMARY</string>
 </dict>
+
+<!-- ... -->
+
+</dict>
+</plist>
 ```
